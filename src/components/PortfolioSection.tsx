@@ -4,54 +4,42 @@ import { ExternalLink, Github, BookOpen, Smartphone, CheckCircle } from 'lucide-
 
 export function PortfolioSection() {
   const projects = [
-  {
-    title: "Nothing Product",
-    description: "A minimalist landing page for presenting Nothing brand phones, headphones, and accessories. Built with semantic HTML5, modular SCSS (BEM), and JavaScript using Parcel for bundling.",
-    tags: ['HTML5', 'SCSS', 'JavaScript', 'Parcel', 'BEM'],
-    demo: "https://elinamrachkovska.github.io/Nothing-Product",
-    github: "https://github.com/ElinaMrachkovska/My_Landing_Page",
-    icon: <Smartphone className="text-pink-400" size={24} />
-  },
-  {
-    title: "React Book Catalog",
-    description: "Full-stack web application for managing a collection of books. It includes functionality for viewing, adding, and deleting books, API integration, and clean scalable architecture.",
-    tags: ['React', 'Node.js', 'Express', 'Vercel', 'API'],
-    demo: "https://project-bookstore-app-ashen.vercel.app/",
-    github: "https://github.com/unbreakable-coders/project-bookstore_app",
-    icon: <BookOpen className="text-pink-400" size={24} />
-  },
-  {
-    title: "Vue Todo App",
-    description: "Lightweight SPA for task management. Features full CRUD functionality, dynamic filtering, and leverage Axios for data fetching with Bulma for UI.",
-    tags: ['Vue 3', 'Vite', 'Axios', 'Bulma', 'SCSS'],
-    demo: "https://elinamrachkovska.github.io/vue-todo-app/",
-    github: "https://github.com/ElinaMrachkovska/vue-todo-app",
-    icon: <CheckCircle className="text-pink-400" size={24} />
-  }
-];
+    {
+      title: "Nothing Product",
+      description: "A minimalist landing page for presenting Nothing brand phones, headphones, and accessories. Built with semantic HTML5, modular SCSS (BEM), and JavaScript using Parcel for bundling.",
+      tags: ['HTML5', 'SCSS', 'JavaScript', 'Parcel', 'BEM'],
+      demo: "https://elinamrachkovska.github.io/Nothing-Product",
+      github: "https://github.com/ElinaMrachkovska/My_Landing_Page",
+      icon: <Smartphone className="text-pink-400" size={24} />
+    },
+    {
+      title: "React Book Catalog",
+      description: "Full-stack web application for managing a collection of books. It includes functionality for viewing, adding, and deleting books, API integration, and clean scalable architecture.",
+      tags: ['React', 'Node.js', 'Express', 'Vercel', 'API'],
+      demo: "https://project-bookstore-app-ashen.vercel.app/",
+      github: "https://github.com/unbreakable-coders/project-bookstore_app",
+      icon: <BookOpen className="text-pink-400" size={24} />
+    },
+    {
+      title: "Vue Todo App",
+      description: "Lightweight SPA for task management. Features full CRUD functionality, dynamic filtering, and leverage Axios for data fetching with Bulma for UI.",
+      tags: ['Vue 3', 'Vite', 'Axios', 'Bulma', 'SCSS'],
+      demo: "https://elinamrachkovska.github.io/vue-todo-app/",
+      github: "https://github.com/ElinaMrachkovska/vue-todo-app",
+      icon: <CheckCircle className="text-pink-400" size={24} />
+    }
+  ];
+
   return (
-    
     <section id="portfolio" className="py-20 relative bg-white/[0.02]">
-      <section className="max-w-5xl mx-auto px-4 py-12">
-      <h2 className="text-3xl font-bold mb-8">Portfolio</h2>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          initial={{
-            opacity: 0,
-            y: 20
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0
-          }}
-          viewport={{
-            once: true
-          }}
-          transition={{
-            duration: 0.5
-          }}
-          className="mb-12">
-
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mb-12"
+        >
           <h2 className="text-3xl font-bold text-white mb-4">
             Featured Projects
           </h2>
@@ -61,93 +49,84 @@ export function PortfolioSection() {
           </p>
         </motion.div>
 
-        <motion.div
-          initial={{
-            opacity: 0,
-            y: 20
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0
-          }}
-          viewport={{
-            once: true
-          }}
-          transition={{
-            duration: 0.5
-          }}
-          className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0B1121] transition-all hover:border-white/20">
+        {/* 👇 ВИПРАВЛЕНО: мапимо масив projects */}
+        <div className="space-y-8">
+          {projects.map((project, index) => (
+            <motion.div
+              key={project.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0B1121] transition-all hover:border-white/20"
+            >
+              <div className="grid md:grid-cols-2 gap-8 p-8">
+                <div className="space-y-6">
+                  <div className="flex items-center gap-3">
+                    <div className="p-2 rounded-lg bg-pink-500/10">
+                      {project.icon}
+                    </div>
+                    <h3 className="text-2xl font-bold text-white">
+                      {project.title}
+                    </h3>
+                  </div>
 
-          <div className="grid md:grid-cols-2 gap-8 p-8">
-            <div className="space-y-6">
-              <div className="flex items-center gap-3">
-                <div className="p-2 rounded-lg bg-cyan-500/10">
-                  <BookOpen className="text-cyan-400" size={24} />
+                  <p className="text-gray-300 leading-relaxed">
+                    {project.description}
+                  </p>
+
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="px-3 py-1 text-sm text-pink-300 bg-pink-500/10 rounded-full border border-pink-500/20"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="flex gap-4 pt-4">
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-6 py-2.5 bg-pink-500 hover:bg-pink-400 text-white font-semibold rounded-lg transition-colors"
+                      aria-label="View Live Demo"
+                    >
+                      <ExternalLink size={18} />
+                      Live Demo
+                    </a>
+
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-6 py-2.5 border border-white/20 hover:bg-white/5 text-white font-medium rounded-lg transition-colors"
+                      aria-label="View Source Code"
+                    >
+                      <Github size={18} />
+                      GitHub
+                    </a>
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold text-white">
-                  React Book Catalog
-                </h3>
+
+                <div className="relative h-full min-h-[200px] rounded-xl bg-gradient-to-br from-gray-800 to-gray-900 border border-white/5 flex items-center justify-center overflow-hidden group-hover:border-white/10 transition-colors">
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(236,72,153,0.1),transparent_70%)]" />
+                  <div className="text-center p-6">
+                    <div className="text-pink-400/20 mb-4">
+                      {React.cloneElement(project.icon as React.ReactElement, { size: 64 })}
+                    </div>
+                    <p className="text-sm text-gray-500 font-mono">
+                      {project.title}
+                    </p>
+                  </div>
+                </div>
               </div>
-
-              <p className="text-gray-300 leading-relaxed">
-                A full-stack web application for managing personal book
-                collections. Features include complete CRUD operations, RESTful
-                API integration, and efficient data handling. The architecture
-                emphasizes scalability and clean code practices.
-              </p>
-
-              <div className="flex flex-wrap gap-2">
-                {[
-                'React',
-                'Node.js',
-                'Express',
-                'Vercel',
-                'API Integration'].
-                map((tag) =>
-                <span
-                  key={tag}
-                  className="px-3 py-1 text-sm text-cyan-300 bg-cyan-500/10 rounded-full border border-cyan-500/20">
-
-                    {tag}
-                  </span>
-                )}
-              </div>
-
-              <div className="flex gap-4 pt-4">
-                <a
-                  href="#"
-                  className="flex items-center gap-2 px-6 py-2.5 bg-cyan-500 hover:bg-cyan-400 text-black font-semibold rounded-lg transition-colors"
-                  aria-label="View Live Demo">
-
-                  <ExternalLink size={18} />
-                  Live Demo
-                </a>
-                <a
-                  href="#"
-                  className="flex items-center gap-2 px-6 py-2.5 border border-white/20 hover:bg-white/5 text-white font-medium rounded-lg transition-colors"
-                  aria-label="View Source Code">
-
-                  <Github size={18} />
-                  GitHub Code
-                </a>
-              </div>
-            </div>
-
-            <div className="relative h-full min-h-[200px] rounded-xl bg-gradient-to-br from-gray-800 to-gray-900 border border-white/5 flex items-center justify-center overflow-hidden group-hover:border-white/10 transition-colors">
-              {/* Abstract representation of the app interface */}
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(34,211,238,0.1),transparent_70%)]" />
-              <div className="text-center p-6">
-                <BookOpen size={64} className="mx-auto text-white/20 mb-4" />
-                <p className="text-sm text-gray-500 font-mono">
-                  Application Preview Placeholder
-                </p>
-              </div>
-            </div>
-          </div>
-        </motion.div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
-    </section>
-    );
-
+  );
 }
