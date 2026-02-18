@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
 
 export function PortfolioSection() {
+  
   const projects = [
     {
       title: "Nothing Product",
@@ -10,7 +11,7 @@ export function PortfolioSection() {
       tags: ['HTML5', 'SCSS', 'JavaScript', 'Parcel', 'BEM'],
       demo: "https://elinamrachkovska.github.io/Nothing-Product",
       github: "https://github.com/ElinaMrachkovska/My_Landing_Page",
-      image: "/prev/1.png" 
+      image: "https://elinamrachkovska.github.io/portfolio/prev/img1.png"
     },
     {
       title: "React Book Catalog",
@@ -18,7 +19,7 @@ export function PortfolioSection() {
       tags: ['React', 'Node.js', 'Express', 'Vercel', 'API'],
       demo: "https://project-bookstore-app-ashen.vercel.app/",
       github: "https://github.com/unbreakable-coders/project-bookstore_app",
-      image: "/prev/2.png"
+      image: "https://elinamrachkovska.github.io/portfolio/prev/img2.png"
     },
     {
       title: "Vue Todo App",
@@ -26,10 +27,9 @@ export function PortfolioSection() {
       tags: ['Vue 3', 'Vite', 'Axios', 'Bulma', 'SCSS'],
       demo: "https://elinamrachkovska.github.io/vue-todo-app/",
       github: "https://github.com/ElinaMrachkovska/vue-todo-app",
-      image: "/prev/3.png"
+      image: "https://elinamrachkovska.github.io/portfolio/prev/img3.png"
     }
   ];
-
   return (
     <section id="portfolio" className="py-20 relative bg-white/[0.02]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
