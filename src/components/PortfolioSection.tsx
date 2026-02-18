@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, BookOpen, Smartphone, CheckCircle } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 
 export function PortfolioSection() {
   const projects = [
@@ -10,7 +10,7 @@ export function PortfolioSection() {
       tags: ['HTML5', 'SCSS', 'JavaScript', 'Parcel', 'BEM'],
       demo: "https://elinamrachkovska.github.io/Nothing-Product",
       github: "https://github.com/ElinaMrachkovska/My_Landing_Page",
-      icon: <Smartphone className="text-pink-400" size={24} />
+      image: "/prev/1.png" 
     },
     {
       title: "React Book Catalog",
@@ -18,7 +18,7 @@ export function PortfolioSection() {
       tags: ['React', 'Node.js', 'Express', 'Vercel', 'API'],
       demo: "https://project-bookstore-app-ashen.vercel.app/",
       github: "https://github.com/unbreakable-coders/project-bookstore_app",
-      icon: <BookOpen className="text-pink-400" size={24} />
+      image: "/prev/2.png"
     },
     {
       title: "Vue Todo App",
@@ -26,7 +26,7 @@ export function PortfolioSection() {
       tags: ['Vue 3', 'Vite', 'Axios', 'Bulma', 'SCSS'],
       demo: "https://elinamrachkovska.github.io/vue-todo-app/",
       github: "https://github.com/ElinaMrachkovska/vue-todo-app",
-      icon: <CheckCircle className="text-pink-400" size={24} />
+      image: "/prev/3.png"
     }
   ];
 
@@ -49,7 +49,6 @@ export function PortfolioSection() {
           </p>
         </motion.div>
 
-        {/* 👇 ВИПРАВЛЕНО: мапимо масив projects */}
         <div className="space-y-8">
           {projects.map((project, index) => (
             <motion.div
@@ -61,15 +60,11 @@ export function PortfolioSection() {
               className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0B1121] transition-all hover:border-white/20"
             >
               <div className="grid md:grid-cols-2 gap-8 p-8">
+                {/* Ліва частина */}
                 <div className="space-y-6">
-                  <div className="flex items-center gap-3">
-                    <div className="p-2 rounded-lg bg-pink-500/10">
-                      {project.icon}
-                    </div>
-                    <h3 className="text-2xl font-bold text-white">
-                      {project.title}
-                    </h3>
-                  </div>
+                  <h3 className="text-2xl font-bold text-white">
+                    {project.title}
+                  </h3>
 
                   <p className="text-gray-300 leading-relaxed">
                     {project.description}
@@ -111,16 +106,14 @@ export function PortfolioSection() {
                   </div>
                 </div>
 
-                <div className="relative h-full min-h-[200px] rounded-xl bg-gradient-to-br from-gray-800 to-gray-900 border border-white/5 flex items-center justify-center overflow-hidden group-hover:border-white/10 transition-colors">
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(236,72,153,0.1),transparent_70%)]" />
-                  <div className="text-center p-6">
-                    <div className="text-pink-400/20 mb-4">
-                      {React.cloneElement(project.icon as React.ReactElement, { size: 64 })}
-                    </div>
-                    <p className="text-sm text-gray-500 font-mono">
-                      {project.title}
-                    </p>
-                  </div>
+                {/* Права частина: прев’ю */}
+                <div className="relative h-full min-h-[200px] rounded-xl overflow-hidden border border-white/5 group-hover:border-white/10 transition-colors">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </motion.div>

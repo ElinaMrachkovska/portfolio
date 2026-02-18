@@ -37,7 +37,7 @@ export function ExperienceSection() {
  
   <section className="max-w-5xl mx-auto px-4 py-12">
       <h2 className="text-3xl font-bold mb-8">Experience</h2>
-  return (
+
     <section id="experience" className="py-20 relative">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -128,7 +128,7 @@ export function ExperienceSection() {
           )}
         </div>
       </div>
-    </section>);
-</section>
+    </section>
+  </section>
  )
 }
