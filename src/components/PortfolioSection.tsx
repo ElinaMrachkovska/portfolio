@@ -9,26 +9,60 @@ export function PortfolioSection() {
       title: "Nothing Product",
       description: "A minimalist landing page for presenting Nothing brand phones, headphones, and accessories. Built with semantic HTML5, modular SCSS (BEM), and JavaScript using Parcel for bundling.",
       tags: ['HTML5', 'SCSS', 'JavaScript', 'Parcel', 'BEM'],
-      demo: "https://elinamrachkovska.github.io/Nothing-Product",
-      github: "https://github.com/ElinaMrachkovska/My_Landing_Page",
-      image: "https://elinamrachkovska.github.io/portfolio/prev/img1.png"
+      demo: "https://elinamrachkovska.github.io/NoThing/",
+      github: "https://github.com/ElinaMrachkovska/NoThing",
+    image: "./prev/img1.png"
     },
-    {
-      title: "React Book Catalog",
-      description: "Full-stack web application for managing a collection of books. It includes functionality for viewing, adding, and deleting books, API integration, and clean scalable architecture.",
-      tags: ['React', 'Node.js', 'Express', 'Vercel', 'API'],
-      demo: "https://project-bookstore-app-ashen.vercel.app/",
-      github: "https://github.com/unbreakable-coders/project-bookstore_app",
-      image: "https://elinamrachkovska.github.io/portfolio/prev/img2.png"
-    },
+    // {
+    //   title: "React Book Catalog",
+    //   description: "Full-stack web application for managing a collection of books. It includes functionality for viewing, adding, and deleting books, API integration, and clean scalable architecture.",
+    //   tags: ['React', 'Node.js', 'Express', 'Vercel', 'API'],
+    //   demo: "https://project-bookstore-app-ashen.vercel.app/",
+    //   github: "https://github.com/unbreakable-coders/project-bookstore_app",
+    //   image: "https://elinamrachkovska.github.io/portfolio/prev/img2.png"
+    // },
     {
       title: "Vue Todo App",
       description: "Lightweight SPA for task management. Features full CRUD functionality, dynamic filtering, and leverage Axios for data fetching with Bulma for UI.",
       tags: ['Vue 3', 'Vite', 'Axios', 'Bulma', 'SCSS'],
       demo: "https://elinamrachkovska.github.io/vue-todo-app/",
       github: "https://github.com/ElinaMrachkovska/vue-todo-app",
-      image: "https://elinamrachkovska.github.io/portfolio/prev/img3.png"
-    }
+     image: "./prev/img3.png"
+    },
+      {
+      title: "Vue Dynamic List of Posts",
+      description: "Lightweight SPA for displaying a dynamic list of posts. Features full CRUD functionality, dynamic filtering, and leverage Axios for data fetching with Bulma for UI.",
+      tags: ['Vue 3', 'Vite', 'Axios', 'Bulma', 'SCSS'],
+      demo: "https://elinamrachkovska.github.io/list-of-posts-vue/",
+      github: "https://github.com/ElinaMrachkovska/list-of-posts-vue",
+      image: "./prev/img4.png"
+    },
+   {
+      title: "Grim & Grim Rock Band LP",
+      description: "Lightweight SPA for displaying a dynamic list of posts. Features full CRUD functionality, dynamic filtering, and leverage Axios for data fetching with Bulma for UI.",
+      tags: ['HTML5', 'CSS', 'JavaScript', 'Intersection Observer API'],
+      demo: "https://elinamrachkovska.github.io/grim-grim/",
+      github: "https://github.com/ElinaMrachkovska/grim-grim",
+      image: "./prev/img5.png"
+    },
+
+    {
+      title: "Skin Microbiome Explorer",
+      description: "An interactive React Single Page Application (SPA) for skin microbiome visualization, featuring dynamic filtering and sorting capabilities.",
+      tags: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Framer Motion'],
+      demo: "https://elinamrachkovska.github.io/Skin-Biome/",
+      github: "https://github.com/ElinaMrachkovska/Skin-Biome",
+      image: "./prev/img6.png"
+    },
+    {
+      title: "2048 Game",
+      description: "A classic 2048 game logic featuring a 4×4 grid, tile merging mechanics, and keyboard arrow-key controls. Includes real-time score tracking, along with conditional states for victory (reaching the 2048 tile) and game-over scenarios.",
+      tags: ['HTML', 'CSS', 'JavaScript (ES Modules)'],
+      demo: "https://elinamrachkovska.github.io/game2048/",
+      github: "https://github.com/ElinaMrachkovska/game2048",
+      image: "./prev/img7.png"
+    },
+
   ];
   return (
     <section id="portfolio" className="py-20 relative bg-white/[0.02]">
