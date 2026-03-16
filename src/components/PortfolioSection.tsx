@@ -13,14 +13,14 @@ export function PortfolioSection() {
       github: "https://github.com/ElinaMrachkovska/NoThing",
     image: "./prev/img1.png"
     },
-    // {
-    //   title: "React Book Catalog",
-    //   description: "Full-stack web application for managing a collection of books. It includes functionality for viewing, adding, and deleting books, API integration, and clean scalable architecture.",
-    //   tags: ['React', 'Node.js', 'Express', 'Vercel', 'API'],
-    //   demo: "https://project-bookstore-app-ashen.vercel.app/",
-    //   github: "https://github.com/unbreakable-coders/project-bookstore_app",
-    //   image: "https://elinamrachkovska.github.io/portfolio/prev/img2.png"
-    // },
+    {
+      title: "React Book Catalog",
+      description: "Full-stack web application for managing a collection of books. It includes functionality for viewing, adding, and deleting books, API integration, and clean scalable architecture.",
+      tags: ['React', 'Node.js', 'Express', 'Vercel', 'API'],
+      demo: "https://project-bookstore-app-ashen.vercel.app/",
+      github: "https://github.com/unbreakable-coders/project-bookstore_app",
+      image: "https://elinamrachkovska.github.io/portfolio/prev/img2.png"
+    },
     {
       title: "Vue Todo App",
       description: "Lightweight SPA for task management. Features full CRUD functionality, dynamic filtering, and leverage Axios for data fetching with Bulma for UI.",
