@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
@@ -42,7 +42,6 @@ export function Layout() {
                 <Link to={item.href} className={`px-4 py-2 rounded-lg text-sm font-bold transition-all duration-300 text-gray-300 ${item.color} relative z-10`}>
                   {item.label}
                 </Link>
-                {/* Анімований фон-неон */}
                 <motion.div className={`absolute inset-0 ${item.glow} rounded-lg blur-md opacity-0 group-hover:opacity-100 transition-opacity`} layoutId="navGlow" />
               </motion.div>
             ))}

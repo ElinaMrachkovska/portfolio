@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
 
@@ -62,7 +61,14 @@ export function PortfolioSection() {
       github: "https://github.com/ElinaMrachkovska/game2048",
       image: "./prev/img7.png"
     },
-
+ {
+  title: "FlowerSeeds — Flower Shop",
+  description: "A multi-page flower shop website for browsing and ordering seeds and plants. Features a product catalog with cart functionality, user authentication, an animated SVG hero section, multilingual support (i18n), and a PHP-powered contact form.",
+  tags: ['HTML5', 'CSS', 'Tailwind CSS', 'JavaScript', 'PHP', 'Lucide React', 'i18n'],
+  demo: "https://elinamrachkovska.github.io/FlowerShop/",
+  github: "https://github.com/ElinaMrachkovska/FlowerShop",
+  image: "./prev/img8.jpg"
+},
   ];
   return (
     <section id="portfolio" className="py-20 relative bg-white/[0.02]">
