@@ -5,14 +5,6 @@ export function PortfolioSection() {
   
   const projects = [
     {
-title: "Hospodar_KP",
-      description: "A functional landing page for a local service platform, featuring responsive layout, interactive sections, and clean UI components. Built with semantic HTML5, modular SCSS (BEM), and JavaScript using Parcel for bundling.",
-      tags: ['HTML5', 'SCSS', 'JavaScript', 'Parcel', 'BEM'],
-      demo: "https://elinamrachkovska.github.io/Hospodar_KP/",
-      github: "https://github.com/ElinaMrachkovska/Hospodar_KP",
-      image: "./prev/img_hospodar.png"
-    },
-    {
       title: "React Book Catalog",
       description: "Full-stack web application for managing a collection of books. It includes functionality for viewing, adding, and deleting books, API integration, and clean scalable architecture.",
       tags: ['React', 'Node.js', 'Express', 'Vercel', 'API'],
@@ -63,10 +55,10 @@ title: "Hospodar_KP",
     },
         {
       title: "Gospodar Kamjanets-Podilskogo",
-      description: "A classic 2048 game logic featuring a 4×4 grid, tile merging mechanics, and keyboard arrow-key controls. Includes real-time score tracking, along with conditional states for victory (reaching the 2048 tile) and game-over scenarios.",
-      tags: ['HTML', 'CSS', 'JavaScript (ES Modules)'],
-      demo: "https://elinamrachkovska.github.io/game2048/",
-      github: "https://github.com/ElinaMrachkovska/game2048",
+     description: "A functional landing page for a local service platform, featuring responsive layout, interactive sections, and clean UI components. Built with semantic HTML5, modular SCSS (BEM), and JavaScript using Parcel for bundling.",
+      tags: ['HTML5', 'SCSS', 'JavaScript', 'Parcel', 'BEM'],
+      demo: "https://elinamrachkovska.github.io/Hospodar_KP/",
+      github: "https://github.com/ElinaMrachkovska/Hospodar_KP",
       image: "./prev/img9.jpg"
     },
 //  {
@@ -108,7 +100,6 @@ title: "Hospodar_KP",
               className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0B1121] transition-all hover:border-white/20"
             >
               <div className="grid md:grid-cols-2 gap-8 p-8">
-                {/* Ліва частина */}
                 <div className="space-y-6">
                   <h3 className="text-2xl font-bold text-white">
                     {project.title}

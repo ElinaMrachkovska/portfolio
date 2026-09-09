@@ -69,7 +69,7 @@ export function Layout() {
       </AnimatePresence>
 
       <main className="relative z-10 pt-20">
-        <Outlet /> {/* Сюди підставляються секції */}
+        <Outlet /> 
       </main>
     </div>
   );
