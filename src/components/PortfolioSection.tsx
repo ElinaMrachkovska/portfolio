@@ -5,6 +5,14 @@ export function PortfolioSection() {
   
   const projects = [
     {
+    title: "Nothing Product",
+      description: "A minimalist landing page for presenting Nothing brand phones, headphones, and accessories. Built with semantic HTML5, modular SCSS (BEM), and JavaScript using Parcel for bundling.",
+      tags: ['HTML5', 'SCSS', 'JavaScript', 'Parcel', 'BEM'],
+      demo: "https://elinamrachkovska.github.io/NoThing/",
+      github: "https://github.com/ElinaMrachkovska/NoThing",
+      image: "./prev/img1.png"
+  },
+    {
       title: "React Book Catalog",
       description: "Full-stack web application for managing a collection of books. It includes functionality for viewing, adding, and deleting books, API integration, and clean scalable architecture.",
       tags: ['React', 'Node.js', 'Express', 'Vercel', 'API'],
