@@ -67,7 +67,7 @@ title: "Hospodar_KP",
       tags: ['HTML', 'CSS', 'JavaScript (ES Modules)'],
       demo: "https://elinamrachkovska.github.io/game2048/",
       github: "https://github.com/ElinaMrachkovska/game2048",
-      image: "./prev/img9.png"
+      image: "./prev/img9.jpg"
     },
 //  {
 //   title: "FlowerSeeds — Flower Shop",
