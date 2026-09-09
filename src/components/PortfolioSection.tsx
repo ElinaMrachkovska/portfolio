@@ -5,12 +5,12 @@ export function PortfolioSection() {
   
   const projects = [
     {
-      title: "Nothing Product",
-      description: "A minimalist landing page for presenting Nothing brand phones, headphones, and accessories. Built with semantic HTML5, modular SCSS (BEM), and JavaScript using Parcel for bundling.",
+title: "Hospodar_KP",
+      description: "A functional landing page for a local service platform, featuring responsive layout, interactive sections, and clean UI components. Built with semantic HTML5, modular SCSS (BEM), and JavaScript using Parcel for bundling.",
       tags: ['HTML5', 'SCSS', 'JavaScript', 'Parcel', 'BEM'],
-      demo: "https://elinamrachkovska.github.io/NoThing/",
-      github: "https://github.com/ElinaMrachkovska/NoThing",
-    image: "./prev/img1.png"
+      demo: "https://elinamrachkovska.github.io/Hospodar_KP/",
+      github: "https://github.com/ElinaMrachkovska/Hospodar_KP",
+      image: "./prev/img_hospodar.png"
     },
     {
       title: "React Book Catalog",
@@ -61,14 +61,22 @@ export function PortfolioSection() {
       github: "https://github.com/ElinaMrachkovska/game2048",
       image: "./prev/img7.png"
     },
- {
-  title: "FlowerSeeds — Flower Shop",
-  description: "A multi-page flower shop website for browsing and ordering seeds and plants. Features a product catalog with cart functionality, user authentication, an animated SVG hero section, multilingual support (i18n), and a PHP-powered contact form.",
-  tags: ['HTML5', 'CSS', 'Tailwind CSS', 'JavaScript', 'PHP', 'Lucide React', 'i18n'],
-  demo: "https://elinamrachkovska.github.io/FlowerShop/",
-  github: "https://github.com/ElinaMrachkovska/FlowerShop",
-  image: "./prev/img8.jpg"
-},
+        {
+      title: "Gospodar Kamjanets-Podilskogo",
+      description: "A classic 2048 game logic featuring a 4×4 grid, tile merging mechanics, and keyboard arrow-key controls. Includes real-time score tracking, along with conditional states for victory (reaching the 2048 tile) and game-over scenarios.",
+      tags: ['HTML', 'CSS', 'JavaScript (ES Modules)'],
+      demo: "https://elinamrachkovska.github.io/game2048/",
+      github: "https://github.com/ElinaMrachkovska/game2048",
+      image: "./prev/img9.png"
+    },
+//  {
+//   title: "FlowerSeeds — Flower Shop",
+//   description: "A multi-page flower shop website for browsing and ordering seeds and plants. Features a product catalog with cart functionality, user authentication, an animated SVG hero section, multilingual support (i18n), and a PHP-powered contact form.",
+//   tags: ['HTML5', 'CSS', 'Tailwind CSS', 'JavaScript', 'PHP', 'Lucide React', 'i18n'],
+//   demo: "https://elinamrachkovska.github.io/FlowerShop/",
+//   github: "https://github.com/ElinaMrachkovska/FlowerShop",
+//   image: "./prev/img8.jpg"
+// },
   ];
   return (
     <section id="portfolio" className="py-20 relative bg-white/[0.02]">
